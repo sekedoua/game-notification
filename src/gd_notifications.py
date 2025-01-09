@@ -50,7 +50,7 @@ def format_game_data(game):
 
 def lambda_handler(event, context):
     # Get environment variables
-    api_key = os.getenv("NBA_API_KEY")
+    api_key = os.getenv("NFL_API_KEY")
     sns_topic_arn = os.getenv("SNS_TOPIC_ARN")
     sns_client = boto3.client("sns")
     
@@ -62,7 +62,8 @@ def lambda_handler(event, context):
     print(f"Fetching games for date: {today_date}")
     
     # Fetch data from the API
-    api_url = f"https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/{today_date}?key={api_key}"
+    #"api_url = f"https://api.sportsdata.io/v3/nba/scores/json/GamesByDate/{today_date}?key={api_key}"
+    api_url = f"https://api.sportsdata.io/v3/nfl/scores/json/ScoresByDate/{today_date}?key={api_key}"
     print(today_date)
      
     try:
@@ -82,7 +83,7 @@ def lambda_handler(event, context):
         sns_client.publish(
             TopicArn=sns_topic_arn,
             Message=final_message,
-            Subject="NBA Game Updates"
+            Subject="NFL Game Updates"
         )
         print("Message published to SNS successfully.")
     except Exception as e:
