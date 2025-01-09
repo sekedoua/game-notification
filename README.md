@@ -1,7 +1,7 @@
 # Notifications de matchs de la NFL / Système d'alerte sportive
 
 ## **Vue d'ensemble**
-Ce projet est un système d'alerte qui envoie des notifications de scores NBA en temps réel aux utilisateurs abonnés via SMS/Email. Il exploite**Amazon SNS**, **AWS Lambda** et **Python**, **Amazon EvenBridge** et les API NFL pour fournir aux fans  des informations de match à jour. Le projet démontre les principes du cloud et des mécanismes de notification efficaces.
+Ce projet est un système d'alerte qui envoie des notifications de scores de la NFL en temps réel aux utilisateurs abonnés via SMS/Email. Il exploite**Amazon SNS**, **AWS Lambda** et **Python**, **Amazon EvenBridge** et les API NFL pour fournir aux fans  des informations de match à jour. Le projet démontre les principes du cloud et des mécanismes de notification efficaces.
 
 ---
 
