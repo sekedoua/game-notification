@@ -5,12 +5,12 @@ Ce projet est un système d'alerte qui envoie des notifications de scores de la 
 
 ---
 
-## **Fonctionalités**
+## **Fonctionnalités**
 
-- Fetches live NBA scores de jeux en utilisant une API externe.
+- Info en live sur les matchs de la NFL via l'API sportsdata.io .
 - Envoie les mises à jour de scores formatées aux abonnés par SMS/Email en utilisant Amazon SNS.
 - Automatisation programmée pour les mises à jour régulières à l'aide d'Amazon EventBridge.
-- Conçu en gardant la sécurité à l'esprit, suivant le principe du moindre privilège pour les rôles de l'IAM.
+- Conception suivant le principe du moindre privilège pour les rôles de l'IAM.
 
 
 ## **Prérequis**
